@@ -1,0 +1,104 @@
+/* Reset / base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f8f8f8;
+}
+.site-header .logo a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+.main-nav ul li {
+  margin-left: 24px;
+}
+.main-nav ul li a {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Hero */
+.about-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #f9fafc, #fff);
+}
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+.about-hero p {
+  font-size: 1.25rem;
+  color: #444;
+}
+
+/* Content */
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #111;
+}
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+
+/* Footer */
+.site-footer {
+  background-color: #f2f2f5;
+  padding: 40px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links ul li {
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+  color: #666;
+}
+
+.legal {
+  margin-top: 24px;
+}
+
+.legal p + p {
+  margin-top: 10px;
+}
