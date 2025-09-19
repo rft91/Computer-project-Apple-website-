@@ -31,10 +31,19 @@ a {
   align-items: center; 
 }
 
+.site-header .logo img {
+  width: 2rem;
+  height: auto;
+  display: flex;
+  align-items: center; 
+}
+
 .site-header .logo a {
   display: flex;
   align-items: center; /* vertically centers img and text */
   text-decoration: none; /* optional: removes underline */
+  font-size: 0.75rem;
+  gap: 8px;
 }
 
 .main-nav ul {

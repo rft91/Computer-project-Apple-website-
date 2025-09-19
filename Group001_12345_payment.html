@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple (Malaysia)</title>
+  <link rel="stylesheet" href="assets/css/1Group001_12345_payment.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <a href="#" class="logo">
+      <img src="assets/images/Apple-Logo.png" alt="apple">
+      <h2>Apple (Tsun Jin)</h2>
+    </a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="Group001_12345_index.html">Home</a></li>
+        <li><a href="Group001_12345_iPhone 17.html">iPhone 17</a></li>
+        <li><a href="Group001_12345_iPhone Air.html">iPhone air</a></li>
+        <li><a href="Group001_12345_iPhone 17 Pro.html">iPhone 17 Pro</a></li>
+        <li><a href="Group001_12345_comparison.html">Comparison</a></li>
+        <li><a href="Group001_12345_iPhone Buy.html">Buy</a></li>
+        <li><a href="Group001_12345_iPhone About Us.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="checkout-container">
+      <h2>Checkout</h2>
+      <form id="paymentForm" action="#" method="post">
+
+        <!-- Select Model -->
+        <label for="model">Select your iPhone model:</label>
+        <select id="model" name="model" required>
+          <option value="">-- Choose Model --</option>
+          <option value="iPhone 17">iPhone 17 - RM3999</option>
+          <option value="iPhone Air">iPhone 17 Plus - RM4999</option>
+          <option value="iPhone 17 Pro">iPhone 17 Pro - RM5499</option>
+          <option value="iPhone 17 Pro Max">iPhone 17 Pro Max - RM5999</option>
+        </select>
+
+        <!-- Storage -->
+        <label for="storage">Storage capacity:</label>
+        <select id="storage" name="storage" required>
+          <option value="">-- Choose Storage --</option>
+          <option value="256">256GB (RM0)</option>
+          <option value="512">512GB (+RM500)</option>
+          <option value="1024">1TB (+RM1000)</option>
+          <option value="2048">2TB (+RM2000)</option>
+        </select>
+
+        <!-- Price -->
+        <p id="totalPrice" class="price-box">Total: RM0</p>
+
+        <!-- User Info -->
+        <label for="name">Full Name (as per IC/Passport):</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Ahmad Ali" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <!-- Payment Method -->
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="">-- Choose Payment --</option>
+          <option value="Card">Credit/Debit Card (Visa/Master)</option>
+          <option value="FPX">FPX Online Banking (Malaysia)</option>
+          <option value="E-Wallet">E-Wallet (Touch 'n Go, GrabPay, Boost)</option>
+        </select>
+
+        <!-- Dynamic Payment Fields -->
+        <div id="paymentDetails">
+          <!-- JS will inject inputs here -->
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Confirm & Pay</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <ul>
+        <li><a href="Group001_12345_index.html">Home</a></li>
+        <li><a href="Group001_12345_iPhone 17.html">iPhone 17</a></li>
+        <li><a href="Group001_12345_iPhone Air.html">iPhone air</a></li>
+        <li><a href="Group001_12345_iPhone 17 Pro.html">iPhone 17 Pro</a></li>
+        <li><a href="Group001_12345_comparison.html">Comparison</a></li>
+        <li><a href="Group001_12345_iPhone Buy.html">Buy</a></li>
+        <li><a href="Group001_12345_iPhone About Us.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <p>Copyright © 2025 S1S1 Group 001 All rights reserved.</p>
+      <p><a href="Group001_12345_iPhone ester egg.html">Privacy Policy</a> │ <a href="Group001_12345_iPhone ester egg.html">Terms of Use</a> │ <a href="Group001_12345_iPhone ester egg.html">Sales and Refunds</a> │ <a href="Group001_12345_iPhone ester egg.html">Legal</a> │ <a href="Group001_12345_iPhone ester egg.html">Site Map</a></p>
+    </div>
+  </footer>
+  <script defer src="assets/js/payment.js"></script>
+
+</body>
+</html>

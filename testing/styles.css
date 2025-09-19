@@ -1,127 +1,83 @@
-/* Reset / base styles */
-* {
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f7;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #111;
-  background: #fff;
-  line-height: 1.5;
-}
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
-/* Header */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #f8f8f8;
+header {
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
 }
-.site-header .logo a {
-  font-size: 1.2rem;
+
+header nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
   font-weight: bold;
 }
-.main-nav ul {
-  list-style: none;
-  display: flex;
+
+header nav a:hover {
+  text-decoration: underline;
 }
-.main-nav ul li {
-  margin-left: 24px;
+
+.checkout-container {
+  background: #fff;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-.main-nav ul li a {
-  font-size: 0.95rem;
+
+.checkout-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
   color: #333;
 }
 
-/* Hero section */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px; /* adjust as needed */
-  background: #f2f2f5; /* placeholder background */
-  text-align: center;
-  padding: 40px;
-  background-image: url('assets/img/image001.jpg'); 
-  background-size: cover;
-  background-position: center;
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
 }
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 16px;
-}
-.hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 24px;
-}
-.cta .btn, .cta .btn-outline {
-  padding: 12px 24px;
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 14px;
 }
-.btn {
-  background-color: #0071e3;
+
+form textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #0071e3;
+  border: none;
+  border-radius: 10px;
   color: #fff;
-}
-.btn-outline {
-  background: transparent;
-  color: #0071e3;
-  border: 1px solid #0071e3;
-  margin-left: 12px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-/* Features section */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
-  padding: 60px 40px;
-  background: #fff;
-}
-.feature-item h2 {
-  font-size: 1.5rem;
-  margin-bottom: 12px;
-}
-.feature-item p {
-  font-size: 1rem;
-  color: #444;
+button:hover {
+  background: #005bb5;
 }
 
-/* Trade-in section */
-.trade-in {
+footer {
   text-align: center;
-  padding: 60px 40px;
-  background: #f9f9fb;
-}
-.trade-in h2 {
-  font-size: 1.8rem;
-  margin-bottom: 16px;
-}
-.trade-in p {
-  font-size: 1rem;
-  margin-bottom: 24px;
-}
-.trade-in .btn {
-  font-size: 1rem;
-}
-
-/* Footer */
-.site-footer {
-  background: #f8f8f8;
-  padding: 40px;
-  font-size: 0.85rem;
-  color: #666;
-  text-align: center;
-}
-.site-footer .legal p {
-  margin-bottom: 10px;
-}
-.site-footer .legal a {
-  color: #666;
+  padding: 15px;
+  margin-top: 40px;
+  background: #111;
+  color: #aaa;
+  font-size: 14px;
 }

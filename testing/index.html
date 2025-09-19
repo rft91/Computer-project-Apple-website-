@@ -1,81 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>iPhone 17 — Apple (Malaysia)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy iPhone - Payment | Group001</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo"><a href="#">Apple</a></div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#">Store</a></li>
-        <li><a href="#">Mac</a></li>
-        <li><a href="#">iPad</a></li>
-        <li><a href="#">iPhone</a></li>
-        <li><a href="#">Watch</a></li>
-        <li><a href="#">AirPods</a></li>
-        <li><a href="#">TV & Home</a></li>
-        <li><a href="#">Entertainment</a></li>
-        <li><a href="#">Accessories</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
+  <header>
+    <h1>Apple Malaysia - Secure Payment</h1>
+    <nav>
+      <a href="Group001_12345_index.html">Home</a>
+      <a href="Group001_67890_specs.html">Specs</a>
+      <a href="Group001_11121_comparison.html">Comparison</a>
+      <a href="Group001_31415_buy.html">Buy</a>
+      <a href="Group001_13248_Aboutus.html">About Us</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>iPhone 17</h1>
-        <p>Even more delightful. Even more durable.</p>
-        <p class="cta">
-          <a class="btn" href="#">Learn more</a>
-          <a class="btn-outline" href="#">Pre-order</a>
-        </p>
-      </div>
-    </section>
+    <section class="checkout-container">
+      <h2>Checkout</h2>
+      <form action="#" method="post">
 
-    <section class="features">
-      <div class="feature-item">
-        <h2>Display</h2>
-        <p>6.3-inch Super Retina XDR display — brighter, with ProMotion up to 120Hz. :contentReference[oaicite:0]{index=0}</p>
-      </div>
-      <div class="feature-item">
-        <h2>Front Camera</h2>
-        <p>New Centre Stage front camera for smarter group selfies and video. :contentReference[oaicite:1]{index=1}</p>
-      </div>
-      <div class="feature-item">
-        <h2>Cameras</h2>
-        <p>48MP Dual Fusion rear cameras, Ultra Wide, more resolution & detail. :contentReference[oaicite:2]{index=2}</p>
-      </div>
-      <div class="feature-item">
-        <h2>Durability</h2>
-        <p>Ceramic Shield 2 front with 3× better scratch resistance. :contentReference[oaicite:3]{index=3}</p>
-      </div>
-      <div class="feature-item">
-        <h2>Chip & Battery</h2>
-        <p>A19 chip delivers all-day battery life. :contentReference[oaicite:4]{index=4}</p>
-      </div>
-      <div class="feature-item">
-        <h2>iOS & Apple Intelligence</h2>
-        <p>New iOS 26 with intelligent features built in. :contentReference[oaicite:5]{index=5}</p>
-      </div>
-    </section>
+        <!-- Select Model -->
+        <label for="model">Select your iPhone model:</label>
+        <select id="model" name="model" required>
+          <option value="">-- Choose Model --</option>
+          <option value="iPhone 17">iPhone 17</option>
+          <option value="iPhone 17 Plus">iPhone 17 Plus</option>
+          <option value="iPhone 17 Pro">iPhone 17 Pro</option>
+          <option value="iPhone 17 Pro Max">iPhone 17 Pro Max</option>
+        </select>
 
-    <section class="trade-in">
-      <h2>Apple Trade In</h2>
-      <p>Get credit towards a new iPhone when you trade in an eligible device. :contentReference[oaicite:6]{index=6}</p>
-      <p><a class="btn" href="#">Find your trade-in value</a></p>
+        <!-- Storage -->
+        <label for="storage">Storage capacity:</label>
+        <select id="storage" name="storage" required>
+          <option value="">-- Choose Storage --</option>
+          <option value="128GB">128GB</option>
+          <option value="256GB">256GB</option>
+          <option value="512GB">512GB</option>
+          <option value="1TB">1TB</option>
+        </select>
+
+        <!-- Payment Info -->
+        <label for="name">Full Name (as per IC/Passport):</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Ahmad Ali" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="">-- Choose Payment --</option>
+          <option value="Credit Card">Credit/Debit Card (Visa/Master)</option>
+          <option value="FPX">FPX Online Banking (Malaysia)</option>
+          <option value="E-Wallet">E-Wallet (Touch 'n Go, GrabPay, Boost)</option>
+        </select>
+
+        <!-- Card Info (optional, shown if card chosen) -->
+        <div class="card-info">
+          <label for="cardnumber">Card Number:</label>
+          <input type="text" id="cardnumber" name="cardnumber" maxlength="16" placeholder="1234 5678 9012 3456">
+
+          <label for="expiry">Expiry Date:</label>
+          <input type="month" id="expiry" name="expiry">
+
+          <label for="cvv">CVV:</label>
+          <input type="password" id="cvv" name="cvv" maxlength="3" placeholder="123">
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Confirm & Pay</button>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="legal">
-      <p>© 2025 Apple Inc. All rights reserved.</p>
-      <p><a href="#">Privacy Policy</a> │ <a href="#">Terms of Use</a> │ <a href="#">Sales and Refunds</a> │ <a href="#">Legal</a> │ <a href="#">Site Map</a></p>
-    </div>
+  <footer>
+    <p>© 2025 Apple Malaysia (Student Project) | Group001</p>
   </footer>
 </body>
 </html>

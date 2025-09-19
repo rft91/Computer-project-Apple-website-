@@ -49,36 +49,95 @@ a {
   color: #333;
 }
 
-/* Hero */
-.about-hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to bottom, #f9fafc, #fff);
-}
-.about-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 16px;
-}
-.about-hero p {
-  font-size: 1.25rem;
-  color: #444;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: #333;
 }
 
-/* Content */
-.about-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 20px;
+h1{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
-.about-content h2 {
-  font-size: 2rem;
-  margin-bottom: 12px;
-  color: #111;
+header {
+  background: #000;
+  padding: 15px;
 }
-.about-content p {
-  font-size: 1.1rem;
-  margin-bottom: 24px;
-  color: #555;
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid white;
+}
+
+.checkout-container {
+  background: #fff;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.checkout-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #0071e3;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005bb5;
 }
 
 
