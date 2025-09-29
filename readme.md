@@ -1,11 +1,1 @@
-|      |-image004.png
-|      |-image005.png
-|      |-iphone 17 Pro and Max_battery.png
-|      |-iphone 17 Pro and Max_display.png
-|      |-iphone air - battery.png
-|      |-iphone Air - camera.png
-|      |-iphone air - screen.png
-|      |-iphone17 - camera.png
-|      |-iphone17 - chip.png
-|      |-iphone17 - ios26.png
-|      |-iphone17_screen.png
+https://docs.google.com/document/d/10al7dD2wgKcGiVlSd5-hcHzR5vn5WQsHlhFri6IeSAw/edit?tab=t.0#heading=h.u0wj3hxp4jy3
